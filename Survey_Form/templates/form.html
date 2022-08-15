@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename =  'css/for_form.css')}}">
+</head>
+<body>
+	<div id ='title'>
+<h1>Surveys form</h1>
+</div>
+<div id='form'>
+<form method="POST" enctype="multipart/form-data">
+	<div id='box'>
+	
+	<div class='all'>
+	<label for="fname">First Name : </label>
+	<input type="text" name="fname" required><br>
+</div>
+<div class='all'>
+	<label for="lname">Last Name :  </label>
+	<input type="text" name="lname" required><br>
+</div>
+<div class='all'>
+    <label for="db">D.O.B : </label>
+	<input type="date" name="db" required><br>
+</div>
+<div class='all'>		
+    <label for="age">Age :         </label>
+	<input type="number" name="age" required><br>
+</div>
+<div class='all'>	
+	<label for="gender">Gender :     </label>
+	<input type="radio" name="gender" value="Male">Male
+	<input type="radio" name="gender" value="Female">Female
+	<input type="radio" name="gender" value="Other">Other
+	<br>
+	</div>
+	<div class='all'>
+	<label for="num">Mobile Number : </label>
+	<input type="Number" name="num" required><br>
+</div>
+<div class='all'>
+	<label for="Email">Email : </label>
+	<input type="email" name="Email" required><br>
+	</div>
+	<div class='all'>
+	<label for="faname">Father Name : </label>
+	<input type="text" name="faname" required><br>
+</div>
+<div class='all'>
+	<label for="fac">Father Occupation : </label>	
+	<input type="text" name="fac"><br>
+</div>
+<div class='all'>	
+
+	<label for="maname">Mother Name : </label>
+	<input type="text" name="maname" required><br>
+</div>
+<div class='all'>	
+	<label for="Address">Address : </label>
+	<input type="text" name="Address" required><br>
+</div>
+<div class='all'>	
+	<label for="city">City : </label>
+	<input type="text" name="city" required><br>
+</div>
+<div class='all'>	
+	<label for="sta">State : </label>
+	<input type="text" name="sta" required><br>
+</div>
+<div class='all'>	
+	<label for="pin">Pincode : </label>
+	<input type="number" name="pin" required><br>
+</div>
+<div class='all'>	
+	<label for="select">Highest Qualification : </label>
+	<select name="select" required="required" value="select">
+		<option>Select Option</option>
+		<option>B.sc</option>
+		<option>B.E</option>
+		<option>B.Tech</option>
+	</select><br>
+</div>
+<div class='all'>
+	<label for="major">Major : </label>
+	<input type="text" name="major" required><br>
+</div>
+<div class='all'>	
+	<label for="perc">Percentage : </label>
+	<input type="text" name="perc" required><br>
+</div>
+<div class='all'>	
+	<label for="roll">University Roll number : </label>
+	<input type="number" name="roll" required><br>
+</div>
+<div class='all'>
+	<label for="Resume">Resume : </label>
+	<input type="file" name="resume" required><br>
+	</div>
+<div class='all'>
+	<label for="1perc">10th Percentage : </label>
+		<input type="text" name="1perc" required><br>
+		</div>
+<div class='all'>		
+	<label for="2perc">12th Percentage : </label>
+	<input type="text" name="2perc" required><br>
+</div>		
+<div class='all'>
+	<label for="pic">Passport Size Photo : </label>
+	<input type="file" name="pic" required><br>
+</div>	
+	</div>
+	<div id='checkbox'>
+	<input type="checkbox" name="" required>hereby declare that the information given above and in the
+enclosed documents is true to the best of my knowledge and belief and
+nothing has been concealed there in.
+</div>
+<br>
+
+<div id='sub'>
+<a href="/sucess"><button>Submit</button></a>
+</div>
+	
+	
+
+
+
+
+
+</div>
+
+</form>
+
+
+</body>
+</html>

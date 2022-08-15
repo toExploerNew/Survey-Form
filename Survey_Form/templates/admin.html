@@ -1,0 +1,58 @@
+<DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	table, td ,tr ,th{
+		text-align: center;
+
+	
+	}
+	table,th{
+		border:1px solid;
+		border-collapse: collapse;
+		font-size:20px;
+	}
+	th{
+		padding: 10px;
+	}
+	td{
+		padding: 0px;
+	}
+	#tab{
+		margin-left:50px;
+		margin-top: 40px;
+	}
+	td a{
+		text-decoration: none;
+	}
+
+</style>
+
+
+
+
+	<title>admin</title>
+</head>
+<body>
+	<h1>Dashboard</h1>
+	<h3>All details for registration Members<h3>
+<div  id='tab'>
+<table method="GET">
+	<tr>
+		<th>university rollNo</th>
+		<th>Name</th>
+		<th>Full Details</th>
+</tr>
+{%  for s in dataf %}
+	<tr>
+		<td>{{s[0]}}</td>
+		<td>{{s[1]}}</td>
+		<td><a href="{{url_for('view',rollno=s[0])}}">Click to view</a></td>
+		
+	</tr>
+	{% endfor %}
+	</div>	
+
+</body>
+</html>

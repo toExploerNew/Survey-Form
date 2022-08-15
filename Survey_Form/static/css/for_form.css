@@ -1,0 +1,74 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+#title{
+	background-color:white
+
+}
+#title h1{
+	color:black;
+	text-align: center;	
+}
+#form{
+	margin: 30px;
+	padding: 20px;
+	border:2px solid;
+	border-radius:10px;
+}
+
+#box{
+
+	margin-left: 30px;
+	padding: 20px;
+}
+#box label{
+	width:250px;
+	display: inline-block;
+	font-weight: bold;
+	font-size:20px;
+}
+
+.all{
+	padding:10px;
+}
+#box input{
+	font-weight: bold;
+
+}
+#checkbox{
+    color:red;
+
+	
+}
+#sub{
+	margin-left: 500px;
+	margin-right: 400px;
+	margin-bottom: 10px;	
+	
+}
+#sub a{
+	padding-left:30px;
+	padding-right: 30px;
+}
+#sub button{
+	padding-left:30px;
+	padding-right: 40px;
+}
+
+#print{
+	margin-left: 600px;
+	
+}
+#print button{
+	padding: 5px;
+	margin:5px;
+	
+}
+#down label{
+	font-size:20px;
+	font-weight: bold;
+	width: 100px;
+	display: inline-block;	
+
+}

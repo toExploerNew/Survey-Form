@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View Details</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename =  'css/for_form.css')}}">
+</head>
+<body>
+
+	<h2 style="text-align: center;">Register Form Details</h2>
+<div id='form'>
+	{% for i in datas%}
+    {% for x in datas_1  %}
+    {% for y in datas_2 %}
+<form method="GET" >
+	<div id='box'>
+	<div class='all'>	
+	<label for="roll">University Roll number : </label>
+
+	{{i[0]}}
+	<br>
+</div>
+
+	<div class='all'>
+	<label for="fname"> Name : </label>
+   <h4 style="display: inline-block;">	{{i[1]}} </h4>
+	<br>
+</div>
+
+<div class='all'>
+    <label for="db">D.O.B : </label>
+	{{i[2]}}<br>
+</div>
+<div class='all'>		
+    <label for="age">Age :         </label>
+	{{i[3]}}<br>
+</div>
+<div class='all'>	
+	<label for="gender">Gender :     </label>
+	{{i[4]}}
+	<br>
+	</div>
+	<div class='all'>
+	<label for="num">Mobile Number : </label>
+	{{x[1]}}<br>
+</div>
+<div class='all'>
+	<label for="Email">Email : </label>
+	{{x[2]}}
+	<br>
+	</div>
+	<div class='all'>
+	<label for="faname">Father Name : </label>
+	{{i[5]}}
+	<br>
+</div>
+<div class='all'>
+	<label for="fac">Father Occupation : </label>
+
+	{{i[6]}}
+	<br>
+</div>
+<div class='all'>	
+
+	<label for="maname">Mother Name : </label>
+	{{i[7]}}
+	<br>
+</div>
+<div class='all'>	
+	<label for="Address">Address : </label>
+	{{i[8]}}
+	<br>
+</div>
+<div class='all'>	
+	<label for="city">City : </label>
+    {{i[9]}}
+	<br>
+</div>
+<div class='all'>	
+	<label for="sta">State : </label>
+	{{i[10]}}
+	<br>
+</div>
+<div class='all'>	
+	<label for="pin">Pincode : </label>
+	{{i[11]}}
+	<br>
+</div>
+<div class='all'>	
+	<label for="select">Highest Qualification : </label>
+	{{y[1]}}
+</div>
+<div class='all'>
+	<label for="major">Major : </label>
+	{{y[2]}}
+	<br>
+</div>
+<div class='all'>	
+	<label for="perc">Percentage : </label>
+	{{y[3]}}
+	<br>
+</div>
+<div class='all'>
+	<label for="1perc">10th Percentage : </label>
+		{{y[5]}}<br>
+		</div>
+<div class='all'>		
+	<label for="2perc">12th Percentage : </label>
+      {{y[6]}}<br>
+</div>		
+
+</div>
+<div id ='down'>	
+<label>Resume</label>
+{{y[8]}}
+<a href="{{url_for('download',data=y[8])}}">Download</a></td>
+<br>
+	<label>Picture</label>
+	{{x[5]}}
+	<a href="{{url_for('downloadby',data=x[5])}}">Download</a>
+	
+</div>
+{% endfor%}
+{%endfor%}
+{% endfor %}
+<div id='print'>
+<button onclick="window.print()">Print
+</button></div>
+</div>
+
+</form>
+</body>
+</html>

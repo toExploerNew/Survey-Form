@@ -1,0 +1,27 @@
+body{
+ margin:30px;
+
+}
+#form{
+	margin-left:400px;
+	border: 2px solid;
+	margin-right: 300px;
+	border-radius: 20px;
+
+
+	
+}
+.under{
+	margin:20px;
+}
+#form label,input{
+	width: 170px;
+	display: inline-block;
+	font-size:20px;
+	font-weight: bold;
+	text-align: center;
+}
+#button{
+	margin-left: 200px;
+	margin-bottom: 10px;
+}
